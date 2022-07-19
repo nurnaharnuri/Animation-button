@@ -1,0 +1,402 @@
+body {
+  background-color: lightblue;
+}
+
+/*=======================1,2====================*/
+.btn-danger {
+  background: red;
+  border-color: red;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-danger:hover {
+  color: red;
+  background: transparent;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+/*=======================3====================*/
+
+.shop-butten a,
+.shop-butten a:hover {
+  text-decoration: none;
+}
+
+.shop-butten a:hover {
+  color: brown !important;
+}
+
+.shop-button {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.125rem;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 30px;
+}
+
+.shop-button::after,
+.shop-button::before {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+}
+
+.shop-button::after {
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+}
+
+.shop-button:hover:before {
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  background-color: brown;
+}
+
+.shop-button:hover:after {
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  background-color: brown;
+}
+
+.shop-button:hover {
+  color: brown !important;
+}
+
+/*=======================4====================*/
+
+.play-store a {
+  color: lightslategray;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
+.play-store a:hover,
+.play-store a:focus {
+  color: lightpink;
+}
+
+.play-store a,
+.play-store a:hover,
+.play-store a:focus,
+.play-store .btn:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.play-store button,
+.play-store button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.play-store .btn {
+  font-size: 0.938rem;
+  font-weight: 500;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  padding: 1.125rem 1.875rem;
+  border: 0 none;
+  border-radius: 0.375rem;
+  outline: 0 none;
+  position: relative;
+  z-index: 1;
+}
+
+.play-store .btn,
+.play-store .btn:active,
+.play-store .btn.sApp-btn::before,
+.bg-overlay::after {
+  background: lightpink;
+}
+
+.play-store .btn:hover {
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/*=======================5====================*/
+.read-more .main-btn {
+  background: rgb(247, 150, 192);
+  background: radial-gradient(
+    circle,
+    rgba(247, 150, 192, 1) 0%,
+    rgba(118, 174, 241, 1) 100%
+  );
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.read-more .main-btn {
+  position: relative;
+  width: 130px;
+  color: white;
+  border-radius: 5px;
+
+  transition: all 0.5s ease-in;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.main-btn::before,
+.main-btn::after {
+  position: relative;
+  content: "";
+  height: 0%;
+  width: 1px;
+  box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.main-btn:hover {
+  background: transparent;
+  color: #5c97e0;
+  box-shadow: none;
+}
+.main-btn:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.main-btn:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.main-btn:hover:before {
+  width: 100%;
+}
+.main-btn :hover:after {
+  width: 100%;
+}
+
+/*=======================6====================*/
+.mein-btn {
+  font-weight: 700;
+  border: none;
+}
+
+.mein-btn {
+  position: absolute;
+  content: "";
+  background: orangered;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.mein-btn:before {
+  height: 0%;
+  width: 2px;
+}
+.mein-btn:after {
+  width: 0%;
+  height: 2px;
+}
+
+.mein-btn {
+  color: orangered;
+  background: transparent;
+}
+
+.mein-btn:hover:before {
+  height: 100%;
+}
+.mein-btn:hover:after {
+  width: 100%;
+}
+
+.mein-btn:before,
+.mein-btn:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: orangered;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/*=======================6====================*/
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn-button {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 172, 238, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-button span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-button:before,
+.btn-button:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+.btn-button:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-button:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-button:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.btn-button:hover:before {
+  height: 100%;
+}
+.btn-button:hover:after {
+  width: 100%;
+}
+.btn-button span:hover {
+  color: rgba(2, 126, 251, 1);
+}
+.btn-button span:before,
+.btn-button span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+.btn-buttonspan:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-button span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-button span:hover:before {
+  height: 100%;
+}
+.btn-button span:hover:after {
+  width: 100%;
+}
+
+/*=======================8====================*/
+
+.btn-click {
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-click span {
+  background: hotpink;
+  background: linear-gradient(0deg, green 0%, red 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-click span:nth-child(1) {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-click span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-click:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-click:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
